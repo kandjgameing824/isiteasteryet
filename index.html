@@ -1,13 +1,26 @@
 <!DOCTYPE html>
-<h1> Is It Easter Yet?</h1>
-<title>Is It Easter Yet?</title>
-<h1><link rel="rel" href="https://isitchristmas.com/"></h1>   
+<h1 style="color:rgb(255, 255, 255);">Is It Easter Yet?</h1>
+<head>
+  <title> Is It Easter Yet?</title>
+  
+  <html>
+  <head>
+    <title>My Page Title</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  </head>
+  <body>
+  
+
+  
+
+<body>
+<h1><link rel="rel" href="https://isitchristmas.com/"></h1>
 </body>
 <html>
 <head>
 <style>
 body {
-  background-color: rgb(77, 77, 77);
+  background-color: rgb(64, 64, 64);
 }
 </style>
 </head>
@@ -30,27 +43,25 @@ body {
     <p id="demo"></p>
     
     <script>
-
     var countDownDate = new Date("Apr 9, 2023 00:00:00").getTime();
-    
 
     var x = setInterval(function() {
     
-
+      
       var now = new Date().getTime();
         
+
       var distance = countDownDate - now;
-   
+        
+  
       var days = Math.floor(distance / (1000 * 60 * 60 * 24));
       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         
 
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-        
-      
+      document.getElementById("demo").innerHTML = "NO";
+
       if (distance < 0) {
         clearInterval(x);
         document.getElementById("demo").innerHTML = "YES";
